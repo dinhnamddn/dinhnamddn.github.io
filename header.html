@@ -1,23 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
+<style>
+    .header {
+        display: flex;
+        justify-content: space-around;
+        height: 60px;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+        align-items: center;
+    }
+    
+    .header ul li {
+        display: inline;
+        width: 100px;
+        margin: auto 40px;
+        text-align: center;
+    }
+    
+    .header ul li a {
+        color: #000;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+    
+    .header ul {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .header ul li .active {
+        color: rgb(6, 226, 215);
+    }
+    
+    .header ul li a:hover {
+        text-decoration: none;
+        color: rgb(6, 226, 215);
+    }
+</style>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<div class="header">
+    <ul>
+        <li><a id="1" href="#">About me</a></li>
+        <li><a id="2" href="#">Projects</a></li>
+        <li><a id="3" href="#">Materials</a></li>
+        <li><a id="4" href="#">Keys</a></li>
+        <li><a id="5" href="#">Contact</a></li>
+    </ul>
+</div>
 
-<body>
-    <div class="header">
-        <ul>
-            <li><a class="active" href="#">About me</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Materials</a></li>
-            <li><a href="#">Key</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
-</body>
-
-</html>
+<script>
+    function activePage(active) {
+        document.getElementById(active).style.color = "rgb(6, 226, 215)";
+    }
+</script>

@@ -1,27 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
+<style>
+    .footer {
+        height: 100px;
+        padding: 0 10vw;
+        background-color: #333333;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .stalk {
+        color: #fff;
+        text-align: center;
+    }
+    
+    .footer div a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .footer div ul {
+        color: #fff;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .footer div ul li {
+        display: inline;
+        margin: 0 20px;
+    }
+    
+    .cropimg {
+        width: 30px;
+        /* height: 30px; */
+        object-fit: cover;
+        /* border-radius: 50%; */
+    }
+    
+    .github {
+        filter: invert(100%);
+    }
+</style>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <div class="footer">
-        <div class="col-md-4">
-            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus mollitia corporis quis eligendi, sed numquam eius, doloribus.</a>
-        </div>
-
-        <div class="col-md-4">
-            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus et pariatur inventore ipsa neque impedit porro eaque magnam veritatis repellat?</a>
-        </div>
-
-        <div class="col-md-4">
-            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio necessitatibus aspernatur temporibus doloribus quae earum fugiat saepe maxime ut dignissimos.</a>
-        </div>
+<div class="footer">
+    <div class="">
+        <h5 class="stalk">You can stalk me more at following pages!</h5>
+        <ul>
+            <li>
+                <a href="https://github.com/dinhnamddn">
+                    <img class="cropimg github" src="/images/github-svgrepo-com.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="https://gitlab.com/dinhnam_ddn">
+                    <img class="cropimg" src="/images/gitlab-svgrepo-com.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=100055721086398">
+                    <img class="cropimg" src="/images/facebook-svgrepo-com.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/dinhnam_ddn">
+                    <img class="cropimg" src="/images/twitter-svgrepo-com.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="cropimg" src="/images/linkedin-svgrepo-com.svg" alt="">
+                </a>
+            </li>
+        </ul>
     </div>
-</body>
-
-</html>
+</div>
