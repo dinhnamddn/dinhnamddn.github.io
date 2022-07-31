@@ -10,7 +10,6 @@ body {
     justify-content: space-around;
     height: 60px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
-    margin-bottom: 20px;
     align-items: center;
 }
 
@@ -45,16 +44,20 @@ body {
 /* body part */
 
 .body {
-    min-height: calc(100vh - 60px - 100px - 40px);
-    padding: 30px;
+    min-height: calc(100vh - 60px - 100px);
+    padding: 50px;
+    display: flex;
+    align-items: center;
 }
 
 .left {
-    float: left;
+    /* float: left; */
+    display: flex;
+    justify-content: space-around;
 }
 
 .right {
-    float: right;
+    /* float: right; */
 }
 
 .avatar {
@@ -64,11 +67,14 @@ body {
     border-radius: 2em;
 }
 
+.activity li {
+    font-weight: 100;
+}
+
 
 /* footer part */
 
 .footer {
-    margin-top: 20px;
     height: 100px;
     background-color: #333333;
     display: flex;
