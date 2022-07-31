@@ -2,18 +2,80 @@ body {
     background-color: rgb(87, 255, 247);
 }
 
-h1 {
-    background-color: rgb(173, 51, 51);
+
+/* herder part */
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+    align-items: center;
 }
 
 .header ul li {
     display: inline;
     width: 100px;
     margin: auto 40px;
+    text-align: center;
 }
 
-.header {}
+.header ul li a {
+    color: #000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.header ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.header ul li .active {
+    color: rgb(6, 226, 215);
+}
+
+.header ul li a:hover {
+    text-decoration: none;
+    color: rgb(6, 226, 215);
+}
+
+
+/* body part */
+
+.body {
+    min-height: calc(100vh - 60px - 100px - 40px);
+    padding: 30px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.avatar {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 2em;
+}
+
+
+/* footer part */
 
 .footer {
-    margin-top: 30px;
+    margin-top: 20px;
+    height: 100px;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+}
+
+.footer div a {
+    color: #fff;
+    text-decoration: none;
 }
