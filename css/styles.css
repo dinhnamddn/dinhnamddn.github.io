@@ -25,3 +25,10 @@
 .activity li {
     font-weight: 100;
 }
+
+.maps {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 2em;
+}
