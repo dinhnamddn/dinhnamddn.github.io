@@ -27,8 +27,8 @@
 }
 
 .maps {
-    width: 500px;
-    height: 400px;
+    width: 400px;
+    height: 300px;
     object-fit: cover;
     border-radius: 2em;
 }
