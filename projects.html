@@ -6,32 +6,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/app.js"></script>
     <title>Projects</title>
 </head>
 
 <body>
     <div w3-include-html="header.html"></div>
 
-    <script>
-        activePage(3);
-    </script>
-
-    <div class="body">
-        <div class="left col-md-5">
-            <img class="avatar" src="images/VideoCapture_20251111-130620~2_Original.jpeg" alt="images/MG5648.jpg">
-        </div>
-        <div class="right col-md-7">
+    <main class="projects-page">
+        <header class="projects-intro">
+            <p class="hero-kicker">Things I build and explore</p>
             <h1>Projects</h1>
-                <strong>Play my first game here: </strong>
-                <a href="https://dinhnamddn.github.io/JS-Game/">Click to play!</a>
-            </p>
-        </div>
-    </div>
+            <p>A collection of software, engineering, and personal projects that reflect my interests and practical experience.</p>
+            <div class="topic-list" aria-label="Project categories">
+                <span>Software Engineering</span>
+                <span>Automotive</span>
+                <span>Web Development</span>
+                <span>Creative Experiments</span>
+            </div>
+        </header>
 
-    <div class="clearfix"></div>
+        <section aria-labelledby="featured-projects">
+            <h2 id="featured-projects">Featured projects</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-card-header">
+                        <p class="project-status">Available</p>
+                        <span class="project-number">01</span>
+                    </div>
+                    <h3>JavaScript Game</h3>
+                    <p>A browser-based game built to practice JavaScript fundamentals, interaction design, and game logic.</p>
+                    <ul class="project-tags">
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                    <a class="project-link" href="https://dinhnamddn.github.io/JS-Game/" target="_blank" rel="noopener noreferrer">Play the game <span aria-hidden="true">??/span></a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card-header">
+                        <p class="project-status">Personal project</p>
+                        <span class="project-number">02</span>
+                    </div>
+                    <h3>Personal Portfolio</h3>
+                    <p>This website presents my experience, interests, research topics, and experiments in a simple portfolio.</p>
+                    <ul class="project-tags">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Responsive design</li>
+                    </ul>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card-header">
+                        <p class="project-status">Exploring</p>
+                        <span class="project-number">03</span>
+                    </div>
+                    <h3>Future Projects</h3>
+                    <p>More projects related to automotive software, semiconductor engineering, and sustainable technology will be added here.</p>
+                    <ul class="project-tags">
+                        <li>Automotive</li>
+                        <li>Embedded systems</li>
+                        <li>Semiconductors</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
 
     <div w3-include-html="footer.html"></div>
 

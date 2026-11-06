@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/app.js"></script>
     <title>About Me</title>
@@ -15,45 +14,272 @@
 <body>
     <div w3-include-html="header.html"></div>
 
-    <script>
-        activePage(1);
-    </script>
-
     <div class="body">
-        <div class="left col-md-5">
-            <img class="avatar" src="images/VideoCapture_20251111-130620~2_Original.jpeg" alt="images/MG5648.jpg">
+        <div class="left">
+            <img class="avatar" src="images/personal/VideoCapture_20251111-130620~2_Original.jpeg" alt="Portrait of Do Dinh Nam">
         </div>
-        <div class="right col-md-7">
-            <h1>About me</h1>
-            <p><strong>Name: </strong>Do Dinh Nam</p>
-            <p><strong>Date of birth: </strong>27/07/2001</p>
-            <p><strong>Education: </strong>FPT University (Software Engineering, 2019 - 2023)</p>
-            <p><strong>Here is my story: 
-                </strong>I am Nam, a software engineer with a strong foundation in IT and hands-on experience
-                <br>in international, cross-cultural projects. I seek to apply my IT expertise and expand it
-                <br>through interdisciplinary learning, driving innovations that support sustainable development
-                <br>and a greener future for society.</p>
-            <p>
-                <strong>Activities: <strong>
-                        <ul class="activity">
-                            <li>Intern's Buddy at FPT Global Internship Program 2024</li>
-                            <li>Technical Mentor at Vietnam Robotic Challenge 2023</li>
-                            <li>Volunteer at Balade en France - French Festival 2023</li>
-                            <li>The OGL at F-Camp 2022</li>
-                            <li>Volunteer at VnExpress Marathon Hanoi Midnight 2020 & 2022</li>
-                            <li>Vice president of Green Heart Team</li>
-                            <li>Member of FPT University Guitar Club</li>
-                            <li>Member of Japanese Software Engineers Club</li>
-                        </ul>
-            </p>
+        <div class="right">
+            <p class="hero-kicker">Software Engineer · Automotive Software · Semiconductor Engineering</p>
+            <h1>Hi, I'm Do Dinh Nam.</h1>
+            <p class="hero-summary">I build reliable software for automotive systems and enjoy working across cultures, technologies, and disciplines to create a greener future.</p>
+            <div class="button-group">
+                <a class="button" href="#experience">View my experience</a>
+                <a class="button secondary" href="contact.html">Get in touch</a>
+            </div>
+            <section>
+                <h2>Education</h2>
+                <ul class="activity">
+                    <li>Feng Chia University - Master of Semiconductor Engineering, 2026 - 2028</li>
+                    <li>FPT University - Software Engineering, 2019 - 2023</li>
+                </ul>
+            </section>
         </div>
     </div>
+
+    <main class="activities-page">
+        <section id="experience" class="experience-section" aria-labelledby="experience-title">
+            <header class="experience-intro">
+                <p class="hero-kicker">Professional background</p>
+                <h2 id="experience-title">Work experience</h2>
+            </header>
+            <article class="experience-card">
+                <div class="experience-heading">
+                    <div>
+                        <h3>Automotive Software Engineer</h3>
+                        <p class="experience-company">FPT Software</p>
+                    </div>
+                    <p class="experience-period">Apr 2024 - Dec 2025</p>
+                </div>
+                <div class="experience-content">
+                    <div>
+                        <h4>Responsibilities</h4>
+                        <ul>
+                            <li>Collaborated with international teams from Japan, South Korea, Mainland China, India, and America on design, implementation, and testing for the Cockpit Domain Control system of next-generation electric vehicles.</li>
+                            <li>Maintained the Android Framework software layer to support stability and performance of in-vehicle infotainment systems.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Technology stack</h4>
+                        <ul class="experience-tags">
+                            <li>Android Automotive</li>
+                            <li>Java</li>
+                            <li>Kotlin</li>
+                            <li>C</li>
+                            <li>Git</li>
+                            <li>Jira</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Achievements</h4>
+                        <ul>
+                            <li>Advanced to Function Owner within three months, leading a team of two engineers and coordinating with foreign vendors.</li>
+                            <li>Received an A rating in the 2024 annual performance evaluation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <header class="activities-intro">
+            <p class="hero-kicker">Beyond my professional work</p>
+            <h2>Activities</h2>
+            <p>These experiences have helped me build leadership, teamwork, communication, and community skills.</p>
+        </header>
+
+        <div class="activities-grid">
+            <article class="activity-card">
+                <div class="activity-slider" data-slider>
+                    <div class="activity-slides">
+                        <img src="images/personal/DSC_9303.jpg" alt="Google IO Extended Hanoi activity photo 1">
+                        <img src="images/personal/IMG_0103.jpeg" alt="Google IO Extended Hanoi activity photo 2">
+                    </div>
+                    <button class="slider-button previous" type="button" data-previous aria-label="Previous Google IO Extended Hanoi photo">&lt;</button>
+                    <button class="slider-button next" type="button" data-next aria-label="Next Google IO Extended Hanoi photo">&gt;</button>
+                    <div class="slider-dots" aria-hidden="true"></div>
+                </div>
+                <h3>Logistics Collaborator</h3>
+                <p>Google IO Extended Hanoi 2026</p>
+            </article>
+
+            <article class="activity-card">
+                <div class="activity-slider" data-slider>
+                    <div class="activity-slides">
+                        <img src="images/personal/IMG_0619.png" alt="FPT Global Internship Program activity photo 1">
+                        <img src="images/personal/MG5648.jpg" alt="FPT Global Internship Program activity photo 2">
+                    </div>
+                    <button class="slider-button previous" type="button" data-previous aria-label="Previous FPT Global Internship photo">&lt;</button>
+                    <button class="slider-button next" type="button" data-next aria-label="Next FPT Global Internship photo">&gt;</button>
+                    <div class="slider-dots" aria-hidden="true"></div>
+                </div>
+                <h3>Intern's Buddy</h3>
+                <p>FPT Global Internship Program 2024</p>
+            </article>
+
+            <article class="activity-card">
+                <div class="activity-slider" data-slider>
+                    <div class="activity-slides">
+                        <img src="images/personal/IMG_0103.jpeg" alt="Vietnam Robotic Challenge activity photo 1">
+                        <img src="images/personal/DSC_9303.jpg" alt="Vietnam Robotic Challenge activity photo 2">
+                    </div>
+                    <button class="slider-button previous" type="button" data-previous aria-label="Previous Vietnam Robotic Challenge photo">&lt;</button>
+                    <button class="slider-button next" type="button" data-next aria-label="Next Vietnam Robotic Challenge photo">&gt;</button>
+                    <div class="slider-dots" aria-hidden="true"></div>
+                </div>
+                <h3>Technical Mentor</h3>
+                <p>Vietnam Robotic Challenge 2023</p>
+            </article>
+
+            <article class="activity-card">
+                <div class="activity-slider" data-slider>
+                    <div class="activity-slides">
+                        <img src="images/personal/IMG_0614.jpeg" alt="Balade en France activity photo 1">
+                        <img src="images/personal/IMG_0616.jpeg" alt="Balade en France activity photo 2">
+                    </div>
+                    <button class="slider-button previous" type="button" data-previous aria-label="Previous Balade en France photo">&lt;</button>
+                    <button class="slider-button next" type="button" data-next aria-label="Next Balade en France photo">&gt;</button>
+                    <div class="slider-dots" aria-hidden="true"></div>
+                </div>
+                <h3>Festival Volunteer</h3>
+                <p>Balade en France - French Festival 2023</p>
+            </article>
+
+            <article class="activity-card">
+                <div class="activity-slider" data-slider>
+                    <div class="activity-slides">
+                        <img src="images/personal/VideoCapture_20251111-130620~2_Original.jpeg" alt="F-Camp activity photo 1">
+                        <img src="images/personal/IMG_0619.png" alt="F-Camp activity photo 2">
+                    </div>
+                    <button class="slider-button previous" type="button" data-previous aria-label="Previous F-Camp photo">&lt;</button>
+                    <button class="slider-button next" type="button" data-next aria-label="Next F-Camp photo">&gt;</button>
+                    <div class="slider-dots" aria-hidden="true"></div>
+                </div>
+                <h3>OGL</h3>
+                <p>F-Camp 2022</p>
+            </article>
+
+            <article class="activity-card">
+                <div class="activity-slider" data-slider>
+                    <div class="activity-slides">
+                        <img src="images/personal/DSC_9303.jpg" alt="VnExpress Marathon activity photo 1">
+                        <img src="images/personal/IMG_0103.jpeg" alt="VnExpress Marathon activity photo 2">
+                    </div>
+                    <button class="slider-button previous" type="button" data-previous aria-label="Previous VnExpress Marathon photo">&lt;</button>
+                    <button class="slider-button next" type="button" data-next aria-label="Next VnExpress Marathon photo">&gt;</button>
+                    <div class="slider-dots" aria-hidden="true"></div>
+                </div>
+                <h3>Race Volunteer</h3>
+                <p>VnExpress Marathon Hanoi Midnight 2020 &amp; 2022</p>
+            </article>
+
+            <article class="activity-card">
+                <div class="activity-slider" data-slider>
+                    <div class="activity-slides">
+                        <img src="images/personal/MG5648.jpg" alt="Green Heart Team activity photo 1">
+                        <img src="images/personal/IMG_0619.png" alt="Green Heart Team activity photo 2">
+                    </div>
+                    <button class="slider-button previous" type="button" data-previous aria-label="Previous Green Heart Team photo">&lt;</button>
+                    <button class="slider-button next" type="button" data-next aria-label="Next Green Heart Team photo">&gt;</button>
+                    <div class="slider-dots" aria-hidden="true"></div>
+                </div>
+                <h3>Vice President</h3>
+                <p>Green Heart Team</p>
+            </article>
+
+            <article class="activity-card">
+                <div class="activity-slider" data-slider>
+                    <div class="activity-slides">
+                        <img src="images/personal/IMG_0616.jpeg" alt="FPT University Guitar Club activity photo 1">
+                        <img src="images/personal/IMG_0614.jpeg" alt="FPT University Guitar Club activity photo 2">
+                    </div>
+                    <button class="slider-button previous" type="button" data-previous aria-label="Previous Guitar Club photo">&lt;</button>
+                    <button class="slider-button next" type="button" data-next aria-label="Next Guitar Club photo">&gt;</button>
+                    <div class="slider-dots" aria-hidden="true"></div>
+                </div>
+                <h3>Guitar Club Member</h3>
+                <p>FPT University Guitar Club</p>
+            </article>
+
+            <article class="activity-card">
+                <div class="activity-slider" data-slider>
+                    <div class="activity-slides">
+                        <img src="images/personal/IMG_0619.png" alt="Japanese Software Engineers Club activity photo 1">
+                        <img src="images/personal/VideoCapture_20251111-130620~2_Original.jpeg" alt="Japanese Software Engineers Club activity photo 2">
+                    </div>
+                    <button class="slider-button previous" type="button" data-previous aria-label="Previous Japanese Software Engineers Club photo">&lt;</button>
+                    <button class="slider-button next" type="button" data-next aria-label="Next Japanese Software Engineers Club photo">&gt;</button>
+                    <div class="slider-dots" aria-hidden="true"></div>
+                </div>
+                <h3>Club Member</h3>
+                <p>Japanese Software Engineers Club</p>
+            </article>
+        </div>
+    </main>
 
     <div class="clearfix"></div>
 
     <div w3-include-html="footer.html"></div>
 
     <script src="/js/import.js"></script>
+    <script>
+        document.querySelectorAll("[data-slider]").forEach(function (slider) {
+            var slides = slider.querySelector(".activity-slides");
+            var images = slider.querySelectorAll("img");
+            var dots = slider.querySelector(".slider-dots");
+            var current = 0;
+            var autoplay;
+
+            images.forEach(function (_, index) {
+                var dot = document.createElement("button");
+                dot.type = "button";
+                dot.className = "slider-dot" + (index === 0 ? " active" : "");
+                dot.setAttribute("aria-label", "Show photo " + (index + 1));
+                dot.addEventListener("click", function () {
+                    showSlide(index);
+                    restartAutoplay();
+                });
+                dots.appendChild(dot);
+            });
+
+            function showSlide(index) {
+                current = (index + images.length) % images.length;
+                slides.style.transform = "translateX(-" + (current * 100) + "%)";
+                dots.querySelectorAll(".slider-dot").forEach(function (dot, index) {
+                    dot.classList.toggle("active", index === current);
+                });
+            }
+
+            slider.querySelector("[data-previous]").addEventListener("click", function () {
+                showSlide(current - 1);
+                restartAutoplay();
+            });
+
+            slider.querySelector("[data-next]").addEventListener("click", function () {
+                showSlide(current + 1);
+                restartAutoplay();
+            });
+
+            function startAutoplay() {
+                autoplay = window.setInterval(function () {
+                    showSlide(current + 1);
+                }, 4000);
+            }
+
+            function stopAutoplay() {
+                window.clearInterval(autoplay);
+            }
+
+            function restartAutoplay() {
+                stopAutoplay();
+                startAutoplay();
+            }
+
+            slider.addEventListener("mouseenter", stopAutoplay);
+            slider.addEventListener("mouseleave", restartAutoplay);
+            slider.addEventListener("focusin", stopAutoplay);
+            slider.addEventListener("focusout", restartAutoplay);
+            startAutoplay();
+        });
+    </script>
 </body>
 
 </html>

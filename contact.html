@@ -6,34 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/app.js"></script>
     <title>Contact</title>
 </head>
 
 <body>
     <div w3-include-html="header.html"></div>
 
-    <script>
-        activePage(6);
-    </script>
-
-    <div class="body">
-        <div class="left col-md-5">
-            <img class="avatar" src="images/MG5648.jpg" alt="images/MG5648.jpg">
-        </div>
-        <div class="right col-md-7">
+    <main class="contact-page">
+        <section class="contact-intro">
+            <p class="hero-kicker">Let’s start a conversation</p>
             <h1>Contact</h1>
-            <p><strong>Phone: </strong>(+84) 888 365 106</p>
-            <p><strong>Email: </strong>dinhnam.ddn@outlook.com</p>
-            <p><strong>Address: </strong>No. 100, Wenhua road, Xitun district, Taichung city, Taiwan</p>
-            <p><strong>LinkedIn: </strong>www.linkedin.com/in/dinhnamddn</p>
-            <p><strong>Line ID: </strong>namdinh.ddn</p>
-        </div>
-    </div>
+            <p>Whether you have a project idea, a research opportunity, or simply want to connect, I would be happy to hear from you.</p>
+        </section>
 
-    <div class="clearfix"></div>
+        <section class="contact-layout" aria-labelledby="contact-details">
+            <div class="contact-image-wrap">
+                <img class="contact-image" src="images/personal/MG5648.jpg" alt="Portrait of Do Dinh Nam">
+            </div>
+
+            <div class="contact-details">
+                <h2 id="contact-details">Get in touch</h2>
+                <div class="contact-list">
+                    <a class="contact-item" href="mailto:dinhnam.ddn@outlook.com">
+                        <span class="contact-icon" aria-hidden="true">@</span>
+                        <span><small>Email</small><strong>dinhnam.ddn@outlook.com</strong></span>
+                    </a>
+                    <a class="contact-item" href="https://www.linkedin.com/in/dinh-nam-3b3379247/" target="_blank" rel="noopener noreferrer">
+                        <span class="contact-icon" aria-hidden="true">in</span>
+                        <span><small>LinkedIn</small><strong>linkedin.com/in/dinhnamddn</strong></span>
+                    </a>
+                    <div class="contact-item">
+                        <span class="contact-icon" aria-hidden="true">L</span>
+                        <span><small>Line ID</small><strong>namdinh.ddn</strong></span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon" aria-hidden="true">⌖</span>
+                        <span><small>Based in</small><strong>Taichung City, Taiwan</strong></span>
+                    </div>
+                </div>
+                <a class="button contact-button" href="mailto:dinhnam.ddn@outlook.com">Send me an email <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
+    </main>
 
     <div w3-include-html="footer.html"></div>
 
